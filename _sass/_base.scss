@@ -452,6 +452,7 @@ footer.sticky-bottom {
       .author {
         font-size: 1rem;
         a {
+          color: var(--global-theme-color);
           border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
             border-bottom-style: solid;
@@ -462,7 +463,7 @@ footer.sticky-bottom {
           font-size: 1rem;
           font-style: normal;
           /* color: $custom-color-green; */
-          color: $blue-color;
+          color: var(--global-theme-color);
           font-weight: 400;
         }
       }
