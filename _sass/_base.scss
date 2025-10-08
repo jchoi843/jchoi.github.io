@@ -3,19 +3,35 @@
  ******************************************************************************/
 
 body {
-  font-family: IBM Plex Sans, sans-serif;
+  font-family:
+    IBM Plex Sans,
+    sans-serif;
   padding-bottom: 50px;
   font-size: 100%;
   line-height: 1.3em;
   letter-spacing: -0.15pt;
 }
 
-hr { background: #80808083; margin: 10px 0 10px 0; padding: 1px 0 0 0; max-width: 900px; }
-
+hr {
+  background: #80808083;
+  margin: 10px 0 10px 0;
+  padding: 1px 0 0 0;
+  max-width: 900px;
+}
 
 // Typography
 
-p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+div,
+span,
+strong {
   color: var(--global-text-color);
   line-height: 1.5;
 }
@@ -28,7 +44,8 @@ h6 {
   font-size: 1.06rem;
 }
 
-a, table.table a {
+a,
+table.table a {
   color: var(--global-theme-color);
   &:hover {
     color: var(--global-theme-color);
@@ -56,7 +73,8 @@ a, table.table a {
 }
 
 // Citation
-.citation, .citation-number {
+.citation,
+.citation-number {
   color: var(--global-theme-color);
 }
 
@@ -82,7 +100,9 @@ a, table.table a {
   .profile {
     width: 30%;
     .address {
-      p { display: block; }
+      p {
+        display: block;
+      }
     }
   }
 }
@@ -98,7 +118,6 @@ a, table.table a {
     }
   }
 }
-
 
 // Navbar customization
 
@@ -123,13 +142,13 @@ a, table.table a {
       color: var(--global-hover-color);
     }
   }
-  .navbar-nav .nav-item.active>.nav-link {
-      background-color: inherit;
-      font-weight: bolder;
-      color: var(--global-theme-color);
-      &:hover {
-        color: var(--global-hover-color);
-      }
+  .navbar-nav .nav-item.active > .nav-link {
+    background-color: inherit;
+    font-weight: bolder;
+    color: var(--global-theme-color);
+    &:hover {
+      color: var(--global-hover-color);
+    }
   }
   .navbar-brand.social {
     padding-bottom: 0;
@@ -184,7 +203,6 @@ a, table.table a {
   }
 }
 
-
 // News
 
 .news table td {
@@ -222,7 +240,6 @@ a, table.table a {
   }
 }
 
-
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
@@ -247,7 +264,6 @@ footer.sticky-bottom {
   padding-bottom: 40px;
   font-size: 0.9rem;
 }
-
 
 // Blog
 
@@ -304,7 +320,6 @@ footer.sticky-bottom {
   }
 }
 
-
 // Distill
 
 .distill {
@@ -313,7 +328,6 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 }
-
 
 // Projects
 
@@ -370,7 +384,6 @@ footer.sticky-bottom {
     text-align: right;
   }
 }
-
 
 // Publications
 
@@ -437,12 +450,12 @@ footer.sticky-bottom {
         font-size: 1.1rem;
       }
       .author {
-        font-size: 1.0rem;
+        font-size: 1rem;
         a {
           border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
+            border-bottom-style: solid;
+            text-decoration: none;
           }
         }
         > em {
@@ -453,14 +466,14 @@ footer.sticky-bottom {
           font-weight: 400;
         }
       }
-      .periodical{
+      .periodical {
         font-size: 1rem;
         color: #727272;
         > em {
           color: $custom-color-blue;
         }
       }
-      .awardNote{
+      .awardNote {
         color: #c50000;
         font-weight: bolder;
         font-size: 1rem;
@@ -540,7 +553,8 @@ pre {
   background-color: var(--global-code-bg-color);
   border-radius: 6px;
   padding: 6px 12px;
-  pre, code {
+  pre,
+  code {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -553,7 +567,6 @@ code {
   border-radius: 3px;
   padding: 3px 3px;
 }
-
 
 // Transitioning Themes
 html.transition,
