@@ -15,7 +15,21 @@ layout: default
     {% if page.profile %}
     <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
       {% if page.profile.image %}
-      <img class="img-fluid z-depth-1 rounded" src="{{ '/assets/img/' | append: page.profile.image }}" />
+      <picture>
+        <source
+          type="image/webp"
+          srcset="{{ '/assets/img/' | append: page.profile.image | replace: '.jpg', '-200.webp' }} 200w, {{ '/assets/img/' | append: page.profile.image | replace: '.jpg', '-400.webp' }} 400w"
+          sizes="(max-width:600px) 200px, 400px"
+        />
+        <img
+          class="img-fluid z-depth-1 rounded"
+          src="{{ '/assets/img/' | append: page.profile.image }}"
+          srcset="{{ '/assets/img/' | append: page.profile.image | replace: '.jpg', '-200.jpg' }} 200w, {{ '/assets/img/' | append: page.profile.image | replace: '.jpg', '-400.jpg' }} 400w"
+          sizes="(max-width:600px) 200px, 400px"
+          alt="Profile"
+          loading="lazy"
+        />
+      </picture>
       {% endif %} {% if page.profile.address %}
       <div class="address">{{ page.profile.address }}</div>
       {% endif %}
