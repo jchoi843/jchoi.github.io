@@ -471,6 +471,7 @@ footer.sticky-bottom {
   font-size: 1rem;
 }
 .publications ol.bibliography li .author a {
+  color: var(--global-theme-color);
   border-bottom: 1px dashed var(--global-theme-color);
 }
 .publications ol.bibliography li .author a:hover {
@@ -481,7 +482,7 @@ footer.sticky-bottom {
   font-size: 1rem;
   font-style: normal;
   /* color: $custom-color-green; */
-  color: #0076df;
+  color: var(--global-theme-color);
   font-weight: 400;
 }
 .publications ol.bibliography li .periodical {
