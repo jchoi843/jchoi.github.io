@@ -7,13 +7,19 @@ first_name: Jaemoo Choi
 middle_name:
 last_name:
 # email: you@example.com # FIXME
-description: Machine Learning Post-Doc @ Georgia Tech 🚀
+description: Machine Learning Postdoc @ Georgia Tech 🚀
 footer_text:
 icon: 🚀 # the emoji used as the favicon 🔥🌌🛸
 url:  # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+
+# -----------------------------------------------------------------------------
+# My own customization :)
+# -----------------------------------------------------------------------------
+
+publication_years: [2025, 2024, 2023]
 resume_path: cv.pdf
 
 # -----------------------------------------------------------------------------
@@ -41,8 +47,8 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: jchoi843 # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username:  # your Twitter handle
-linkedin_username:  # your LinkedIn user name
+twitter_username: jaemoo51133  # your Twitter handle
+linkedin_username: # your LinkedIn user name
 scholar_userid: Ba2G6sIAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -67,7 +73,7 @@ panelbear_analytics: # panelbear analytics site ID
 blog_name: # your blog must have a name for it to show up in the nav bar
 blog_description:
 permalink: /blog/:year/:title/
-blog_image: 
+blog_image: # the default image for blog posts
 
 # Pagination
 pagination:
