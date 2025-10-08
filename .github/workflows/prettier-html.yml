@@ -1,4 +1,4 @@
-name: Prettify gh-pages
+name: Prettify jchoi-pages
 
 on:
   workflow_dispatch:
@@ -7,10 +7,10 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout gh-pages branch
+      - name: Checkout jchoi-pages branch
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
+          ref: jchoi-pages
 
       - name: Find and Remove </source> Tags
         run: find . -type f -name "*.html" -exec sed -i 's/<\/source>//g' {} +
