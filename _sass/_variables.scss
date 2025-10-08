@@ -38,3 +38,21 @@ $black-color: #000000 !default;
 
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
+
+
+/* default link color */
+a {
+  color: blue;
+  text-decoration: none; /* optional: remove underline */
+}
+
+/* hover color (when mouse is over) */
+a:hover {
+  color: red;
+  text-decoration: underline; /* optional: show underline on hover */
+}
+
+/* visited link color (if you also want to control it) */
+a:visited {
+  color: blue; /* same as unvisited */
+}

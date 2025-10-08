@@ -10,7 +10,7 @@ years: 1950
 
 profile:
   align: right
-  image: output.png
+  image: image.jpg
   address:
 
 news: true # includes a list of news items
