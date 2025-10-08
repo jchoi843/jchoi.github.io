@@ -166,7 +166,21 @@
     
     <div class="profile float-right">
       
-      <img class="img-fluid z-depth-1 rounded" src="/assets/img/image.jpg" />
+      <picture>
+        <source
+          type="image/webp"
+          srcset="/assets/img/image-200.webp 200w, /assets/img/image-400.webp 400w"
+          sizes="(max-width:600px) 200px, 400px"
+        />
+        <img
+          class="img-fluid z-depth-1 rounded"
+          src="/assets/img/image.jpg"
+          srcset="/assets/img/image-200.jpg 200w, /assets/img/image-400.jpg 400w"
+          sizes="(max-width:600px) 200px, 400px"
+          alt="Profile"
+          loading="lazy"
+        />
+      </picture>
        
     </div>
     
