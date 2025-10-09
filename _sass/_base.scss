@@ -37,10 +37,13 @@ strong {
 }
 
 /* Ensure all hyperlinks use the global theme (hyperlink) color */
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   color: var(--global-theme-color);
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--global-hover-color);
   text-decoration: underline;
 }
