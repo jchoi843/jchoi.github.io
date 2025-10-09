@@ -111,6 +111,16 @@ strong {
   line-height: 1.5;
 }
 
+/* Ensure all hyperlinks use the global theme (hyperlink) color */
+a, a:link, a:visited {
+  color: var(--global-theme-color);
+}
+
+a:hover, a:focus {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
+
 div {
   font-size: 1.03rem;
 }
@@ -199,7 +209,7 @@ table.table a:hover:after {
   color: var(--global-text-color);
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
-  color: var(--global-text-color);
+  color: var(--global-theme-color);
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: var(--global-hover-color);
@@ -337,11 +347,11 @@ footer.sticky-bottom {
   margin-bottom: 0;
 }
 .post-list li a {
-  color: var(--global-text-color);
+  color: var(--global-theme-color);
   text-decoration: none;
 }
 .post-list li a:hover {
-  color: var(--global-theme-color);
+  color: var(--global-hover-color);
 }
 
 .pagination .page-item .page-link {
